@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src https://visitor-counter.nukie.workers.dev; img-src 'self' data:; font-src 'self';">
-    <meta name="description" content="Mitra Abhi Rama website is coming soon. Stay tuned!">
+    <meta name="description" content="nukie's personal website is coming soon. Stay tuned!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TEMPORARILY HIDDEN
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    -->
     <title>nukie's personal site - Under Construction</title>
     <style>
         :root {
@@ -222,11 +220,10 @@
 <body>
 
     <div class="container">
-    <!-- TEMPORARILY HIDDEN
         <div class="logo-container">
-            <img src="MAR-small.png" alt="Mitra Abhi Rama" class="logo-img">
+            <img src="favicon.png" alt="skinny devil logo" class="logo-img">
         </div>
-    -->
+
         <h1>We're building something exciting</h1>
         <p>Our website is currently under construction. We are working hard to deliver the best experience possible.
             Stay tuned!</p>
@@ -306,7 +303,7 @@
     const res  = await fetch("https://visitor-counter.nukie.workers.dev", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ page: "index_mar" })
+      body: JSON.stringify({ page: "index_nukie" })
     });
     const data = await res.json();
     document.getElementById("visitor-total").textContent  = data.total.toLocaleString();
